@@ -1,0 +1,209 @@
+/*index*/
+body{
+    background-color:#4b2648;
+    margin:0;
+}
+
+
+.cajacontador{
+    background-color:#e4d5e2;
+    height:125px;
+}
+
+.cajacodigo{
+    background:#874a82;
+    padding-top:50px; 
+    padding-bottom:70px
+}
+
+.cajaformulario{
+    width:30%;
+    margin:auto;
+    text-align:center;
+    color:white;
+}
+
+@media screen and (max-width: 850px) {
+    .cajaformulario {
+      width: calc(80%);
+    }
+  }
+
+.pie{
+    background:#9e6699;
+}
+
+.sinborde{
+    border:none!important;
+}
+
+/*formulario*/
+
+.bodyform{
+    background:#874a82;
+    color:white;
+    margin-bottom:30px;
+}
+
+.imgpaddingtop{
+    padding-top:30px;
+}
+
+.cajaform2{
+    width:40%;
+    margin:auto;
+    text-align:center;
+}
+
+@media screen and (max-width: 850px) {
+    .cajaform2 {
+      width: calc(93%);
+    }
+  }
+
+.textcenter{
+    text-align:center;
+}
+.paddtop{
+    padding-top:30px;
+    width: 45%;
+    margin:auto;
+}
+
+@media screen and (max-width: 850px) {
+    .paddtop {
+      width: calc(90%);
+    }
+  }
+
+
+.titular{
+    font-size:16px;
+    margin-top:30px
+}
+
+.cajainvitado{
+    background-color: rgb(158, 102, 153);
+    color:#4b2648; 
+    border:1px solid #4b2648;
+    margin-top:20px;
+    
+}
+
+.cajatituloinvitado{
+    background-color: #4b2648; 
+    color:rgb(158, 102, 153);
+    padding:9px;
+    font-size:16px;
+}
+.nombre{
+    display:block;
+    text-align:center;
+    margin-top:4px;
+    margin-bottom:4px;
+    margin-right:7px;
+    font-size:18px;
+    color:white;
+}
+
+@media screen and (max-width: 850px) {
+    .nombre {
+        width: 110%;
+        margin-bottom: 9px;
+        font-size: 17px;
+        right: 5%;
+        position: relative!important;
+    }
+  }
+
+.noasiste, .asiste{
+    display:inline-block;
+    text-align:left !important;
+    margin-top:4px;
+    margin-left:7px;
+
+    color:#CEB9CE;
+}
+
+@media screen and (max-width: 850px) {
+    .noasiste {
+        margin-right: 17px;
+    }
+  }
+
+.margeninput{
+    margin-bottom:15px!important;
+}
+
+.labelinvitado{
+    display:inline-block;
+    text-align:left;
+    margin-top:4px;
+    width:70px;
+}
+.cajacomidas{
+    margin-top:10px;
+    padding:10px
+}
+
+.textarea{
+    height:auto!important;
+    margin-top:10px!important;
+}
+
+.cajano{
+    display:inline-block;
+    margin-bottom:10px
+}
+.no{
+    display:inline-block;
+    text-align:left;
+    margin-top:4px;
+    margin-left:4px;
+}
+
+.deshabilitado{
+    background:#CEB9CE!important;
+    border:0px!important;
+}
+
+.adulto{
+    padding-top: 8px;
+    padding-bottom: 6px;
+    background-color: #CEB9CE;
+    color:#4b2648;
+    border-bottom:1px solid #4b2648;
+    text-align: center;
+}
+
+.ticcomida{
+    display:inline-block;
+}
+
+@media screen and (max-width: 850px) {
+    .ticcomida {
+        display: block;
+    }
+  }
+
+.asisten{
+    display:inline-block;
+    width:30%;
+}
+
+@media screen and (max-width: 850px) {
+    .asisten {
+        display: inline-flex;
+        width:auto;
+    }
+  }
+
+
+  @media screen and (max-width: 480px) {
+    .imgdestacados {
+      max-width: 170%!important;
+      right:35%!important;
+      position:relative!important;
+    }
+  }
+  
