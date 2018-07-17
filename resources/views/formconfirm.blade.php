@@ -42,10 +42,7 @@
 					$( '#' + usuario + 'comida' ).removeAttr('checked');
 					$( '#' + usuario + 'postre' ).removeAttr('checked');
 					$( '#' + usuario + 'recena' ).removeAttr('checked');
-
-
-
-					
+		
 				}
 			}
 
@@ -115,7 +112,8 @@
 							<input name="codigo" value="{{$invitados[0]->codigo_confirmacion}}" type="hidden">
 							<input name="id" value="{{$invitados[0]->id_usuario}}" type="hidden">
 							<input name="confirmado" value="{{$invitados[0]->confirmado}}" type="hidden">
-
+							
+							
 							@if(isset($invitados[1]->id_usuario))
 								@if( $invitados[1]->id_usuario != ((int)$invitados[0]->id_usuario + 1))
 									<input name="acompanante" value="{{$invitados[1]->id_usuario}}" type="hidden">
@@ -335,4 +333,3 @@
 		</div>
 	</body>
 </html>
-

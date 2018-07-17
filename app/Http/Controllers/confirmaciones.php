@@ -56,6 +56,7 @@ class confirmaciones extends Controller
         $invitados = Usuario::where('codigo_confirmacion',$codigo)->get();
 
         $emailviejo = $invitados[0]->emailConfirm;
+
         
         foreach($invitados->all() as $invitado)
 
@@ -141,24 +142,24 @@ class confirmaciones extends Controller
             $acompanante->save();
 
         }
-            //si es la 1 vez que se confirma
+        
+
+        //email para usuario
         if($request->confirmado == 0){
-            //email para usuario, gracias
+
             $emailrespuesta = new emailrespuesta();
             Mail::to($emailConfirm)->send($emailrespuesta);
 
         }else{
-            //email para usuario, reconfirmacion
-
             $emailrespuesta = new emailrespuesta();
-            Mail::to($emailviejo)->send($emailrespuesta);
+            Mail::to($emailConfirm)->send($emailrespuesta);
 
-            $request->request->add(['reconfirmado'=>'1']);
-            dd($request->all());
-
-            $emailrespuesta = new emailrespuesta();
-            Mail::to($emailConfirm)->send($emailrespuesta);       
-
+            //email en caso de reconfirmacion
+            if( $emailviejo != $emailConfirm ){
+            //aqui abría que cambiar el valor de $request->confirmado a 0!!!!!!!!
+                $emailrespuesta = new emailrespuesta();
+                Mail::to($emailviejo)->send($emailrespuesta);
+            }
         }
         
 

@@ -10,16 +10,11 @@
     </head>
 
     <body style="text-align:center">
-    
         <div>
         @if($_REQUEST['confirmado'] == 0)
             <img width="100%" src="{{ $message->embed(public_path().'/images/gracias-mail.jpg')}}" alt="Nos casamos">                    
         @else
-            @if(isset($reconfirmado))
-                <img width="100%" src="{{ $message->embed(public_path().'/images/gracias-mail.jpg')}}" alt="Nos casamos">                    
-            @else
-                <img width="100%" src="{{ $message->embed(public_path().'/images/cambio-datos.jpg')}}" alt="Nos casamos">                    
-            @endif
+            <img width="100%" src="{{ $message->embed(public_path().'/images/cambio-datos.jpg')}}" alt="Nos casamos">                    
         @endif
 
         </div>
